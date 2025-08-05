@@ -1,0 +1,9 @@
+[init]
+	defaultBranch = master
+[user]
+	name = p3drohenriquefernandes
+	email = 28553108+p3drohenriquefernandes@users.noreply.github.com
+[core]
+	editor = nvim
+[push]
+	autoSetupRemote = true
