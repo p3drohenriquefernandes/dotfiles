@@ -7,6 +7,7 @@ export PATH=$PATH:$HOME/.local/scripts:$HOME/.local/bin
 export EDITOR=nvim
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+export GOPATH=$HOME/.go
 
 # aliases
 alias ls='ls --color=auto'
