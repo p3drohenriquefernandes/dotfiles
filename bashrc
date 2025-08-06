@@ -18,7 +18,7 @@ alias vim='nvim'
 alias vi.='nvim .'
 
 # keybindings
-bind '"\C-f":"tmux-sessionizer"'
+bind '"\C-f":"tmux-sessionizer\n"'
 
 # brew
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
