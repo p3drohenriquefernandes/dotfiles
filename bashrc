@@ -1,14 +1,24 @@
 #
-# .zsh_profile
+# ~/.bashrc
 #
 
-# path
-export PATH=$PATH:$HOME/.local/scripts
-
 # environment
+export PATH=$PATH:$HOME/.local/scripts:$HOME/.local/bin
 export EDITOR=nvim
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+
+# aliases
+alias ls='ls --color=auto'
+alias ll='ls -lah'
+alias v='nvim'
+alias v.='nvim .'
+alias vi='nvim'
+alias vim='nvim'
+alias vi.='nvim .'
+
+# keybindings
+bind '"\C-f":"tmux-sessionizer"'
 
 # brew
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
