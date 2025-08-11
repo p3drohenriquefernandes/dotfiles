@@ -17,6 +17,7 @@ alias v.='nvim .'
 alias vi='nvim'
 alias vim='nvim'
 alias vi.='nvim .'
+alias tt='tmux new -s $(basename `pwd`)'
 
 # keybindings
 bind '"\C-f":"tmux-sessionizer\n"'
