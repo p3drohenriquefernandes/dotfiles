@@ -8,7 +8,7 @@ config.default_cursor_style = "BlinkingBlock"
 config.animation_fps = 1
 config.cursor_blink_rate = 500
 config.term = "xterm-256color"
-config.font = wezterm.font("Iosevka Nerd Font Mono")
+config.font = wezterm.font("FiraCode Nerd Font")
 config.cell_width = 0.9
 config.window_background_opacity = 1.0
 config.prefer_egl = true
@@ -48,3 +48,4 @@ config.mouse_bindings = {
 }
 
 return config
+
