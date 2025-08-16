@@ -10,9 +10,14 @@ config.cursor_blink_rate = 500
 config.term = "xterm-256color"
 config.font = wezterm.font("Iosevka Nerd Font Mono")
 config.cell_width = 0.9
-config.window_background_opacity = 0.9
+config.window_background_opacity = 1.0
 config.prefer_egl = true
 config.font_size = 18.0
+config.disable_default_key_bindings = true
+config.hide_tab_bar_if_only_one_tab = true
+config.use_fancy_tab_bar = false
+config.default_prog = { "powershell.exe", "-NoLogo" }
+config.initial_cols = 80
 
 config.window_padding = {
 	left = 0,
@@ -20,9 +25,6 @@ config.window_padding = {
 	top = 0,
 	bottom = 0,
 }
-
-config.hide_tab_bar_if_only_one_tab = true
-config.use_fancy_tab_bar = false
 
 config.keys = {
 	{
@@ -38,14 +40,11 @@ config.keys = {
 }
 
 config.mouse_bindings = {
-  {
-    event = { Up = { streak = 1, button = "Left" } },
-    mods = "NONE",
-    action = wezterm.action.Nop,
-  },
+	{
+		event = { Up = { streak = 1, button = "Left" } },
+		mods = "NONE",
+		action = wezterm.action.Nop,
+	},
 }
-
-config.default_prog = { "powershell.exe", "-NoLogo" }
-config.initial_cols = 80
 
 return config
